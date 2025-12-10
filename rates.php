@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./frontend/style.css">
+    <title>Homepage</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-left">
+                <img src="./images/logo-dark.png" class="logo-image">
+                <div class="nav-brand">The Daily GRIND</div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="rates.php" class="active">Rates</a></li>
+                <li><a href="gallery.php">Gallery</a></li>
+                <li><a href="contact.php">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Rates</h1>
+            <p>Affordable pricing for everyone</p>
+        </div>
+    </section>
+
+    <section class="rates">
+        <div class="container">
+            <div class="rates-grid">
+                <div class="rate-card">
+                    <h3>Hourly Pass</h3>
+                    <div class="price">₱30<span>/hour</span></div>
+                    <ul>
+                        <li>Free coffee & water</li>
+                        <li>Fast Wi-Fi</li>
+                        <li>Charging outlets</li>
+                    </ul>
+                    <a href="contact.php" class="btn btn-primary">Get Started</a>
+                </div>
+
+                <div class="rate-card featured">
+                    <span class="badge">Popular</span>
+                    <h3>Half-Day Pass</h3>
+                    <div class="price">₱330<span>/12 hours</span></div>
+                    <ul>
+                        <li>Free coffee & water</li>
+                        <li>Fast Wi-Fi</li>
+                        <li>Charging outlets</li>
+                    </ul>
+                    <a href="contact.php" class="btn btn-secondary">Get Started</a>
+                </div>
+
+                <div class="rate-card">
+                    <h3>Full-Day Pass</h3>
+                    <div class="price">₱800<span>/28 hours</span></div>
+                    <ul>
+                        <li>Access to study booth</li>
+                        <li>Free coffee & water</li>
+                        <li>Fast Wi-Fi</li>
+                        <li>Charging outlets</li>
+                    </ul>
+                    <a href="contact.php" class="btn btn-primary">Get Started</a>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h3>Monthly Passes Available</h3>
+                <p>For frequent users, we offer flexible monthly packages with even greater savings. <a href="contact.php">Contact us</a> to learn more.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+    
+            <!-- Column 1 -->
+            <div class="footer-about">
+                <h3><img src="./images/logo-light.png" class="logo-image-footer"> The Daily GRIND</h3>
+                <p>A cozy space made for students and professionals who need peace, focus, and coffee.</p>
+            </div>
+    
+            <!-- Column 2 -->
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="about.php">About</a></li>
+                    <li><a href="rates.php">Rates</a></li>
+                    <li><a href="gallery.php">Gallery</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                </ul>
+            </div>
+    
+            <!-- Column 3 -->
+            <div class="footer-contact">
+                <h4>Get in Touch</h4>
+    
+                <p>1523 Dapitan St, Sampaloc, Manila, 1015 Metro Manila</p>
+                <p>(555) 1234-5678</p>
+                <p>thedailygrind@gmail.com</p>
+    
+                <div class="footer-socials">
+                    <a href="#">ⓕ</a>
+                    <a href="#">🅾</a>
+                    <a href="#">𝕏</a>
+                </div>
+            </div>
+    
+        </div>
+    
+        <p class="footer-bottom">© 2025 The Daily GRIND All rights reserved.</p>
+    </footer>
+
+    <script src="./backend/script.js"></script>
+</body>
+</html>

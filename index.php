@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./frontend/style.css">
+    <title>Homepage</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-left">
+                <img src="./images/logo-dark.png" class="logo-image">
+                <div class="nav-brand">The Daily GRIND</div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.php" class="active">Home</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="rates.php">Rates</a></li>
+                <li><a href="gallery.php">Gallery</a></li>
+                <li><a href="contact.php">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Study. Sip. Stay.</h1>
+                <p>A cozy space for students and professionals. Hourly rates with free coffee and Wi-Fi.</p>
+                <div class="hero-buttons">
+                    <a href="rates.php" class="btn btn-primary">View Rates</a>
+                    <a href="about.php" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <img src="./images/hero.jpeg" alt="Study space" class="hero-image">
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2>Why Choose Us?</h2>
+            <div class="features-grid">
+                <div class="feature" id="coffeeFeature">
+                    <h3>☕ Free Coffee</h3>
+                    <p>Unlimited refills included</p>
+                    <p>Click Me to see the Menu</p>
+                </div>
+                <div class="feature" id="wifiFeature">
+                    <h3>📶 Fast Wi-Fi</h3>
+                    <p>High-speed internet</p>
+                    <p>Click Me to see the Speed Test</p>
+                </div>
+                <div class="feature">
+                    <h3>🔌 Power Outlets</h3>
+                    <p>Charge at every seat</p>
+                </div>
+                <div class="feature">
+                    <h3>🤐 Quiet Space</h3>
+                    <p>Perfect for focus</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="visit">
+        <div class="container">
+            <h2>Ready to Get Productive</h2>
+            <p>No reservations needed — just walk in and find your perfect study spot.</p>
+            <a href="contact.php" class="btn btn-primary">Visit Us Today</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+    
+            <!-- Column 1 -->
+            <div class="footer-about">
+                <h3><img src="./images/logo-light.png" class="logo-image-footer"> The Daily GRIND</h3>
+                <p>A cozy space made for students and professionals who need peace, focus, and coffee.</p>
+            </div>
+    
+            <!-- Column 2 -->
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="about.php">About</a></li>
+                    <li><a href="rates.php">Rates</a></li>
+                    <li><a href="gallery.php">Gallery</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                </ul>
+            </div>
+    
+            <!-- Column 3 -->
+            <div class="footer-contact">
+                <h4>Get in Touch</h4>
+    
+                <p>1523 Dapitan St, Sampaloc, Manila, 1015 Metro Manila</p>
+                <p>(555) 1234-5678</p>
+                <p>thedailygrind@gmail.com</p>
+    
+                <div class="footer-socials">
+                    <a href="#">ⓕ</a>
+                    <a href="#">🅾</a>
+                    <a href="#">𝕏</a>
+                </div>
+            </div>
+    
+        </div>
+    
+        <p class="footer-bottom">© 2025 The Daily GRIND All rights reserved.</p>
+    </footer>
+
+    <div class="image-modal" id="imageModal">
+        <div class="image-modal-content">
+            <span class="close-modal">&times;</span>
+            <img id="modalImage" src="" alt="">
+        </div>
+    </div>
+
+    <script src="./backend/script.js"></script>
+</body>
+</html>

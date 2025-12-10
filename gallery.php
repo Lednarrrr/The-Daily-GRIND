@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./frontend/style.css">
+    <title>Homepage</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-left">
+                <img src="./images/logo-dark.png" class="logo-image">
+                <div class="nav-brand">The Daily GRIND</div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="rates.php">Rates</a></li>
+                <li><a href="gallery.php" class="active">Gallery</a></li>
+                <li><a href="contact.php">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Gallery</h1>
+            <p>See our space up close</p>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="container">
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="./images/study-booth.png" alt="Study booth">
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/coffee-bar.jpg" alt="Coffee bar">
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/desk-setup.jpg" alt="Desk setup">
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/seating-area.png" alt="Seating area">
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/charging-station.png" alt="Charging station">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+    
+            <!-- Column 1 -->
+            <div class="footer-about">
+                <h3><img src="./images/logo-light.png" class="logo-image-footer"> The Daily GRIND</h3>
+                <p>A cozy space made for students and professionals who need peace, focus, and coffee.</p>
+            </div>
+    
+            <!-- Column 2 -->
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="about.php">About</a></li>
+                    <li><a href="rates.php">Rates</a></li>
+                    <li><a href="gallery.php">Gallery</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                </ul>
+            </div>
+    
+            <!-- Column 3 -->
+            <div class="footer-contact">
+                <h4>Get in Touch</h4>
+    
+                <p>1523 Dapitan St, Sampaloc, Manila, 1015 Metro Manila</p>
+                <p>(555) 1234-5678</p>
+                <p>thedailygrind@gmail.com</p>
+    
+                <div class="footer-socials">
+                    <a href="#">ⓕ</a>
+                    <a href="#">🅾</a>
+                    <a href="#">𝕏</a>
+                </div>
+            </div>
+    
+        </div>
+    
+        <p class="footer-bottom">© 2025 The Daily GRIND All rights reserved.</p>
+    </footer>
+
+    <div class="lightbox" id="lightbox">
+        <span class="close-btn">&times;</span>
+        <img id="lightbox-img" src="" alt="Full Screen">
+    </div>
+    
+    <script src="./backend/script.js"></script>
+</body>
+</html>

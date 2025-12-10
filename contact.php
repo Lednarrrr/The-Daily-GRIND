@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./frontend/style.css">
+    <title>Homepage</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-left">
+                <img src="./images/logo-dark.png" class="logo-image">
+                <div class="nav-brand">The Daily GRIND</div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="rates.php">Rates</a></li>
+                <li><a href="gallery.php">Gallery</a></li>
+                <li><a href="contact.php" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Get in Touch</h1>
+            <p>We'd love to hear from you</p>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <div class="info-item">
+                        <h4>Location</h4>
+                        <p>1523 Dapitan St, Sampaloc, Manila, 1015 Metro Manila<br>Philippines</p>
+
+                        <div class="map-embed">
+                            <iframe 
+                                src="https://maps.google.com/maps?q=1523+Dapitan+St,+Sampaloc,+Manila&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                                width="100%" 
+                                height="250" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <h4>Email</h4>
+                        <p><a href="mailto:thedailygrind@gmail.com">thedailygrind@gmail.com</a></p>
+                    </div>
+                    <div class="info-item">
+                        <h4>Phone</h4>
+                        <p><a href="tel:+6355512346567">(555) 123-4567</a></p>
+                    </div>
+                    <div class="info-item">
+                        <h4>Hours</h4>
+                        <p>Open 24 hours, 7 days a week</p>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h2>Send us a Message</h2>
+                    <form action="./backend/process_contact.php" method="POST">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+    
+            <!-- Column 1 -->
+            <div class="footer-about">
+                <h3><img src="./images/logo-light.png" class="logo-image-footer"> The Daily GRIND</h3>
+                <p>A cozy space made for students and professionals who need peace, focus, and coffee.</p>
+            </div>
+    
+            <!-- Column 2 -->
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="about.php">About</a></li>
+                    <li><a href="rates.php">Rates</a></li>
+                    <li><a href="gallery.php">Gallery</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                </ul>
+            </div>
+    
+            <!-- Column 3 -->
+            <div class="footer-contact">
+                <h4>Get in Touch</h4>
+    
+                <p>1523 Dapitan St, Sampaloc, Manila, 1015 Metro Manila</p>
+                <p>(555) 1234-5678</p>
+                <p>thedailygrind@gmail.com</p>
+    
+                <div class="footer-socials">
+                    <a href="#">ⓕ</a>
+                    <a href="#">🅾</a>
+                    <a href="#">𝕏</a>
+                </div>
+            </div>
+    
+        </div>
+    
+        <p class="footer-bottom">© 2025 The Daily GRIND All rights reserved.</p>
+    </footer>
+
+    <script src="./backend/script.js"></script>
+</body>
+</html>
