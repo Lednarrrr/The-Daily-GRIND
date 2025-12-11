@@ -33,7 +33,7 @@
     <section class="about">
         <div class="container">
             <div class="about-section">
-                <h2>Who We Are</h2>
+                <h2>Our Story</h2>
                 <p>The Daily GRIND is a cozy study café located in España designed for students, freelancers, and anyone looking for a peaceful place to study or work. The unique concept offers free coffee and Wi-Fi, which means customers only have to pay for the time they stay.</p>
                 <p>The café promotes productivity, comfort, and a sense of community for those who need a focused environment.</p>
             </div>
@@ -41,10 +41,13 @@
             <div class="about-section">
                 <h2>Our Mission</h2>
                 <p>To provide an affordable and comfortable space for focused studying, collaboration, and creativity with free coffee that fuels learning.</p>
+
+                <h2>Our Vision</h2>
+                <p>To be the most trusted study hub in España where students and professionals can thrive in a productive, caffeine-powered atmosphere.</p>
             </div>
 
             <div class="values">
-                <h2>Our Values</h2>
+                <h2>Our Objectives</h2>
                 <div class="values-grid">
                     <div class="value-item">
                         <h3>Affordability</h3>
