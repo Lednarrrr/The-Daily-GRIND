@@ -57,6 +57,20 @@ p {
   color: var(--text);
 }
 
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--brown);
+}
+
 /* Navigation */
 .navbar {
   background: rgba(255, 255, 255, 0.2);
@@ -767,36 +781,71 @@ p {
 }
 
 
+
 /* Responsive */
 @media (max-width: 768px) {
-  h1 {
-    font-size: 2rem;
-  }
-  h2 {
-    font-size: 1.8rem;
-  }
+  /* --- 1. EXISTING LAYOUT FIXES (Keep these!) --- */
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.8rem; }
 
   .hero .container,
   .contact-grid {
     grid-template-columns: 1fr;
   }
 
-  .hero-buttons {
-    flex-direction: column;
+  .hero-buttons { flex-direction: column; }
+  .btn { width: 100%; }
+  .rate-card.featured { transform: scale(1); }
+
+  /* --- 2. NEW HAMBURGER MENU LOGIC --- */
+  
+  /* Show the button */
+  .hamburger {
+      display: block;
+      margin-left: auto; /* Pushes it to the right if needed */
   }
 
-  .btn {
-    width: 100%;
+  /* Shrink logo text slightly to fit */
+  .nav-brand {
+      font-size: 1.2rem;
   }
 
-  .rate-card.featured {
-    transform: scale(1);
-  }
-
+  /* Transform the Nav Links into a Slide-out Drawer */
   .nav-links {
-    gap: 1rem;
-    font-size: 0.9rem;
+    position: fixed;
+    top: 70px;          /* Sit directly below the navbar */
+    left: 0;            /* Align to left edge */
+    width: 100%;        /* Full width */
+    background-color: var(--cream);
+    
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    border-top: 1px solid var(--border);
+
+    /* --- NEW ANIMATION SETTINGS --- */
+    max-height: 0;          /* Start with 0 height (hidden) */
+    opacity: 0;             /* Start invisible */
+    overflow: hidden;       /* Hide content that doesn't fit */
+    padding: 0;             /* No padding when closed */
+    transition: all 0.4s ease-in-out; /* Smoothly animate height & opacity */
   }
+
+  /* When the 'active' class is added... */
+  .nav-links.active {
+      max-height: 500px;      /* Expand to fit content (arbitrary large number) */
+      opacity: 1;             /* Become visible */
+      padding: 20px 0;        /* Add padding back */
+  }
+
+  .nav-links li {
+      margin: 16px 0;
+  }
+
+  /* Hamburger Animation to 'X' */
+  .hamburger.active .bar:nth-child(2) { opacity: 0; }
+  .hamburger.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+  .hamburger.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
 }
 
 @media (max-width: 480px) {

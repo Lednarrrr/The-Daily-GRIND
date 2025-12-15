@@ -72,4 +72,31 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }
+
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-links");
+
+    if (hamburger && navMenu) {
+        // Toggle menu on Hamburger click
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+
+        // Close menu when a link is clicked
+        document.querySelectorAll(".nav-links a").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }));
+
+        // --- NEW CODE: CLOSE ON CLICK OUTSIDE ---
+        document.addEventListener("click", (e) => {
+            // Check if the click target is NOT the hamburger AND NOT the menu
+            if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+                // If true, remove the active classes to close it
+                hamburger.classList.remove("active");
+                navMenu.classList.remove("active");
+            }
+        });
+    }
 });
