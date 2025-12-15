@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         echo "<script>
                 alert('Thank you! Your message has been sent successfully.');
-                window.location.href='../contact.php';
+                window.location.href='../contact.html';
               </script>";
     } else {
 
